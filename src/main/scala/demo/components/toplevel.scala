@@ -460,18 +460,6 @@ object toplevel {
         ),
         div(className := "row",
           Panel(PanelContent(
-            id = Some("pie"),
-            title = "Pie Chart",
-            text = "Here is a pie chart example"
-          ), PieChart(countries)),
-          Panel(PanelContent(
-            id = Some("radar"),
-            title = "Radar Chart",
-            text = "Here is a radar chart showing Pokémon stats. Try changing Pokémon."
-          ), RadarChart(pokemons))
-        ),
-        div(className := "row",
-          Panel(PanelContent(
             id = Some("tree"),
             title = "Tree Chart",
             text = "Here is part of the duck family tree."
@@ -505,6 +493,18 @@ object toplevel {
             title = "Smooth Line Chart",
             text = "And here is the same example drawn smoothly."
           ), SmoothLineChart(tickers))
+        ),
+        div(className := "row",
+          Panel(PanelContent(
+            id = Some("pie"),
+            title = "Pie Chart",
+            text = "Here is a pie chart example"
+          ), PieChart(countries)),
+          Panel(PanelContent(
+            id = Some("radar"),
+            title = "Radar Chart",
+            text = "Here is a radar chart showing Pokémon stats. Try changing Pokémon."
+          ), RadarChart(pokemons))
         ),
         div(className := "row",
           Panel(PanelContent(

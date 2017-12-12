@@ -37,7 +37,7 @@ object logo {
     .backend(new Backend(_))
     .render((_, ps, b) => {
       val line = Bezier(ps)
-      val circles = line.path.points.map(p => circle(
+      val circles: js.Array[ReactTag] = line.path.points.map(p => circle(
         onClick ==> b.onClick,
         r := 5,
         cx := p(0),

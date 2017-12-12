@@ -113,7 +113,7 @@
 
 #tree circle {
   stroke: #003366;
-  fill: #dddddd;
+  /*fill: #dddddd;*/
 }
 #tree path {
   stroke: #336699;
